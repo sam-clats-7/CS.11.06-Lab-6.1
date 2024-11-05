@@ -74,15 +74,15 @@ public class AdventureTime {
         arr = readFileStr(fileName);
         int xval = 0;
         int yval = 0;
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i].charAt(0) == 'd'){
-                yval -= Integer.parseInt(arr[i].substring(5));
+        for (String s : arr) {
+            if (s.charAt(0) == 'd') {
+                yval -= Integer.parseInt(s.substring(5));
             }
-            if(arr[i].charAt(0) == 'u'){
-                yval += Integer.parseInt(arr[i].substring(3));
+            if (s.charAt(0) == 'u') {
+                yval += Integer.parseInt(s.substring(3));
             }
-            if(arr[i].charAt(0) == 'f'){
-                xval += Integer.parseInt(arr[i].substring(8));
+            if (s.charAt(0) == 'f') {
+                xval += Integer.parseInt(s.substring(8));
             }
         }
         return Math.abs(xval * yval);
@@ -103,16 +103,16 @@ public class AdventureTime {
         int xval = 0;
         int yval = 0;
         int aim = 0;
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i].charAt(0) == 'd'){
-                aim += Integer.parseInt(arr[i].substring(5));
+        for (String s : arr) {
+            if (s.charAt(0) == 'd') {
+                aim += Integer.parseInt(s.substring(5));
             }
-            if(arr[i].charAt(0) == 'u'){
-                aim -= Integer.parseInt(arr[i].substring(3));
+            if (s.charAt(0) == 'u') {
+                aim -= Integer.parseInt(s.substring(3));
             }
-            if(arr[i].charAt(0) == 'f'){
-                xval += Integer.parseInt(arr[i].substring(8));
-                yval += Integer.parseInt(arr[i].substring(8))*aim;
+            if (s.charAt(0) == 'f') {
+                xval += Integer.parseInt(s.substring(8));
+                yval += Integer.parseInt(s.substring(8)) * aim;
             }
         }
         return Math.abs(xval * yval);
