@@ -9,13 +9,6 @@ public class AdventureTime {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-//        System.out.println(challengeOne("testInputOneTwo.txt")); // ans = 7
-//        System.out.println(challengeOne("inputOneTwo.txt")); //ans: 1655
-//        System.out.println(challengeTwo("testInputOneTwo.txt")); // ans = 5
-//        System.out.println(challengeTwo("InputOneTwo.txt")); // ans = 1683
-//        System.out.println(challengeThree("testInputThreeFour.txt")); // ans = 150
-//        System.out.println(challengeThree("InputThreeFour.txt")); // ans = 1524750
-//        System.out.println(challengeFour("testInputThreeFour.txt")); //ans = 900
 //        System.out.println(challengeFour("InputThreeFour.txt")); //ans = 1592426537
         int challengeOneAnswer = challengeOne("inputOneTwo.txt");
         int challengeTwoAnswer = challengeTwo("inputOneTwo.txt");
